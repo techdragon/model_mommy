@@ -9,7 +9,10 @@ setuptools.setup(
     version=model_mommy.__version__,
     packages=["model_mommy"],
     include_package_data=True,  # declarations in MANIFEST.in
-    install_requires=open(join(dirname(__file__), 'requirements.txt')).readlines(),
+    install_requires=[
+        'django>=1.11',
+        'six'
+    ],
     tests_require=[
         'django>=1.11',
         'pil',

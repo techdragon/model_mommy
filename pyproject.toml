@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "model_mommy"
+version = "1.6.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+six = "^1.12"
+django = "*"
+
+[tool.poetry.dev-dependencies]
+django-test-without-migrations = "^0.6.0"
+pre-commit = "^1.15"
+sphinx = "^2.0"
+tox = "^3.9"
+wheel = "^0.33.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
